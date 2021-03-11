@@ -1,0 +1,384 @@
+body {
+	font-family: 'Montserrat Alternates', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	transition: 100ms;
+}
+
+#main {
+	margin: 0 auto;
+	width: 1440px;
+}
+
+.container {
+	width: 1230px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/*ICONS BLOCK*/
+
+.tomato-icon {
+	position: absolute;
+	background-image: url(img/head-tomato.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 153px; 
+	height: 193px; 
+	left: 0;
+}
+
+.cucumber-icon {
+	position: absolute;
+	background-image: url(img/head-cucumber.png);
+	background-repeat: no-repeat;
+	width: 224px;
+	height: 206px;
+	right: -150px;
+}
+
+.cruglishki-icon {
+	position: absolute;
+	background-image: url(img/cruglishki-icon.png);
+	background-repeat: no-repeat;
+	width: 139px;
+	height: 196px;
+	top: 220px;
+	left: 120px;
+}
+
+.cruglishki-icon_second {
+	position: absolute;
+	background-image: url(img/cruglishki-icon.png);
+	background-repeat: no-repeat;
+	width: 139px;
+	height: 196px;
+	right: 0;
+	top: 240px;
+	transform: rotate(90deg);
+}
+
+.mashrooms-icon {
+	position: absolute;
+	background-image: url(img/mushrooms-icon.png);
+	width: 107px;
+	height: 106px;
+	top: 350px;
+	left: -90px;
+}
+
+.pizza-icon_shadow {
+	position: absolute;
+	background-image: url(img/pizza-shadow_icon.png);
+	width: 144px;
+	height: 169px;
+	right: -200px;
+	top: 370px;
+}
+
+.meat-shadow {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image: url(img/meat-shadow.png);
+	background-size: contain;
+	width: 150px;
+	height: 150px;
+	top: 70px;
+}
+
+.cheto-shadow {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image: url(img/cheto-shadow.png);
+	opacity: .2;
+	width: 115px;
+	height: 150px;
+	right: 0;
+	top: 270px;
+}
+
+/*ICONS BLOCK END*/
+
+.head {
+	background-image: url(img/bg1.png);
+	height: 832px;
+}
+
+.head-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 27px;
+}
+
+.head-blocks {
+	width: 312px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.head-timeTable {
+	width: 340px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.head-timeTable div:nth-child(1)::before {
+	content: '';
+	position: absolute;
+	background-image: url(img/tochka.png);
+	width: 4px;
+	height: 4px;
+	top: 8px;
+	left: -14px;
+}
+
+.head-timeTable div:nth-child(2)::before {
+	content: '';
+	position: absolute;
+	background-image: url(img/call.svg);
+	background-size: contain;
+	width: 39px;
+	height: 39px;
+	top: -6px;
+	left: 174px;
+}
+
+.head-cont_text {
+	width: 541px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.head-cont_text div {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.head-cont_piza {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-left: 202px;
+}
+
+.head-cont_piza::after {
+	content: '';
+	position: absolute;
+	background-image: url(img/head-pizza_info.png);
+	width: 371px;
+	height: 67px;
+	right: 0;
+	top: 140px;
+}
+
+
+.head-content {
+	margin-top: 70px;
+	position: relative;
+}
+
+/*SECOND BLOCK*/
+
+.choice {
+	position: relative;
+	margin-top: 150px;
+}
+
+.choice-text, .choice-nav {
+	display: flex;
+	justify-content: center;
+}
+
+.choice-text {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.choice-nav div {
+	background-color: #ECEEF6;
+	padding: 20px 50px;
+	border-radius: 45px;
+	margin: 50px 20px;
+	cursor: pointer;
+}
+
+.choice-nav .is-active {
+	color: #fff;
+	background-color: #59AAF1;
+}
+
+.pizza-block {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.choice-pizzas {
+	position: relative;
+	margin: 0 40px 50px 0;
+	width: 220px;
+	border: 2px solid #ECEEF6;
+	border-radius: 20px;
+	padding: 20px 20px 25px;
+}
+
+.choice-pizza_uzel {
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	border: inherit;
+	bottom: -30px;
+	background-color: #fff; 
+	left: calc(50% - 28px);
+	clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+ 	transform: rotate(-45deg);
+ 	border-bottom-left-radius: 30px;
+}
+
+.choice-pizzas_image {
+	width: 170px;
+	margin: 0px auto;
+}
+
+.choice-pizzas_name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+}
+
+.choice-pizzas_name div:nth-child(2), .choice-pizzas_info p {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.choice-pizzas_price {
+	position: relative;
+	margin: 15px 0 10px;
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+}
+
+.choice-pizzas_block {
+	z-index: 1;
+	position: absolute;
+	top: 40px;
+}
+
+.choice-pizzas:nth-child(4), .choice-pizzas:nth-child(8) {
+	margin-right: 0;
+}
+
+/*3 ЧАСТЬ*/
+
+.last-mushrooms {
+	position: absolute;
+	background-image: url("img/last/mushrooms.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 150px;
+	height: 150px;
+	top: 70px;
+}
+
+.last-maskgr {
+	position: absolute;
+	background-image: url("img/last/maskgr.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 400px;
+	height: 640px;
+	left: 120px;
+}
+
+.last-maskgr_sec {
+	right: 0;
+	position: absolute;
+	background-image: url("img/last/maskgr-sec.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 324px;
+	height: 470px;
+}
+
+.last {
+	position: relative;
+	margin-top: 100px;
+	background-image: url(img/last/lastbg.png);
+	height: 575px;
+}
+
+.last-list_text {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.last-actions {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.last-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.inp {
+	font-family: 'Montserrat Alternates';
+	margin-right: 30px;
+	background-color: #ffffff;
+	border: 2px solid #ECEEF6;
+	border-radius: 57px;
+	outline: none;
+	padding: 17px 25px;
+	width: 180px;
+}
+
+.inp::placeholder {
+	color: black;
+}
+
+.btn {
+	border: none;
+	width: 150px;
+	margin-right: 0;
+	padding-left: 40px;
+	background-color: #FE5626;
+	color: #fff;
+	font-weight: bold;
+}
+
+.btn-img {
+	margin-left: 18px;
+	margin-bottom: 2px;
+}
+
+.last-car {
+	display: flex;
+	justify-content: center;
+	margin-top: 54px;
+}
+
+.footer {
+	padding: 40px 0;
+}
+
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
